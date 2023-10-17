@@ -1,6 +1,9 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.plugin.parcelize")
+    id("org.jetbrains.kotlin.plugin.serialization")
+
 }
 
 android {
@@ -41,6 +44,8 @@ dependencies {
     annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
     implementation ("com.codepath.libraries:asynchttpclient:2.2.0")
     implementation ("com.google.code.gson:gson:2.8.5")
+    implementation ("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.3")
+
 
 
     implementation("androidx.core:core-ktx:1.9.0")
